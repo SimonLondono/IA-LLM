@@ -1,0 +1,288 @@
+################################################################################
+RESULTADOS DEL MODELO: DEEPSEEK
+################################################################################
+
+============================================================
+Caso #1 — Modelo: deepseek
+Entrada: BAJ DISC 125 2015
+Esperado: Bajaj Discover 125 2015
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Bajaj                       │
+│ Modelo          │ Discover 125                │
+│ Cilindraje      │ 124cc                       │
+│ Año             │ 2014                        │
+│ Categoría       │ Sport                       │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'BAJ DISC 125 2015' se interpreta como Bajaj Discover 125 del año 2015. Aunque no hay un modelo exacto del 2015, el 'Bajaj Discover 125' del 2014 es la coincidencia más cercana en cilindraje y modelo. Se asume un error menor en el año.
+============================================================
+
+============================================================
+Caso #2 — Modelo: deepseek
+Entrada: DISCO 125
+Esperado: Bajaj Discover 125
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Bajaj                       │
+│ Modelo          │ Discover 125                │
+│ Cilindraje      │ 125                         │
+│ Año             │ N/A                         │
+│ Categoría       │ N/A                         │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'DISCO 125' se interpreta como 'Discover 125' de Bajaj, basado en las reglas de equivalencia proporcionadas. No hay coincidencia exacta en la lista, pero es la opción más probable.
+============================================================
+
+============================================================
+Caso #3 — Modelo: deepseek
+Entrada: DISCOVER 126
+Esperado: Bajaj Discover 126
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Bajaj                       │
+│ Modelo          │ Discover                    │
+│ Cilindraje      │ 124cc                       │
+│ Año             │ 2014                        │
+│ Categoría       │ Sport                       │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'DISCOVER 126' se interpreta como 'Bajaj Discover' por las reglas dadas. El número '126' no coincide exactamente con el cilindraje, pero 'Discover 125' es el modelo más cercano. Se selecciona la versión de 2014 como la más probable.
+============================================================
+
+============================================================
+Caso #4 — Modelo: deepseek
+Entrada: 125ST 15'
+Esperado: Motocicleta 125cc del 2015
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Bajaj                       │
+│ Modelo          │ Discover 125ST              │
+│ Cilindraje      │ 124cc                       │
+│ Año             │ 2014                        │
+│ Categoría       │ Sport                       │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta '125ST 15'' coincide con el modelo 'Bajaj Discover 125ST' (2014). Se asume que '15'' podría ser un error tipográfico o referencia al año 2015, pero el modelo más cercano es de 2014. La marca se deduce por 'BAJ' y el modelo por 'DISC'.
+============================================================
+
+============================================================
+Caso #5 — Modelo: deepseek
+Entrada: FAZER 125
+Esperado: Yamaha Fazer 125
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Yamaha                      │
+│ Modelo          │ Fazer                       │
+│ Cilindraje      │ 153                         │
+│ Año             │ 2017                        │
+│ Categoría       │ Sport                       │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'FAZER 125' se interpreta como una Yamaha Fazer con cilindraje cercano a 125cc. La opción más cercana es la Yamaha Fazer 153cc (2017), ya que no hay una Fazer exacta de 125cc en la lista. Se asume un error de escritura o aproximación en el cilindraje.
+============================================================
+
+============================================================
+Caso #6 — Modelo: deepseek
+Entrada: FZ 125
+Esperado: Yamaha FZ 125
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Yamaha                      │
+│ Modelo          │ YZF-R 125                   │
+│ Cilindraje      │ 124                         │
+│ Año             │ 2010                        │
+│ Categoría       │ Sport                       │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'FZ 125' parece ser un error de escritura común para 'YZF-R 125' de Yamaha, que es una moto deportiva de 124cc. El modelo más cercano en la lista es el Yamaha YZF-R 125 del año 2010, que coincide con la categoría 'Sport'.
+============================================================
+
+============================================================
+Caso #7 — Modelo: deepseek
+Entrada: YAMAHA FZ z
+Esperado: Yamaha FZ 125
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Yamaha                      │
+│ Modelo          │ FZ-X                        │
+│ Cilindraje      │ 149                         │
+│ Año             │ 2022                        │
+│ Categoría       │ Classic                     │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'YAMAHA FZ z' parece ser un error de escritura de 'YAMAHA FZ-X', que es un modelo válido en la lista con cilindraje de 149cc y año 2022.
+============================================================
+
+################################################################################
+RESULTADOS DEL MODELO: GEMINI
+################################################################################
+
+============================================================
+Caso #1 — Modelo: gemini
+Entrada: BAJ DISC 125 2015
+Esperado: Bajaj Discover 125 2015
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Bajaj                       │
+│ Modelo          │ Discover 125                │
+│ Cilindraje      │ 124cc                       │
+│ Año             │ 2015                        │
+│ Categoría       │ Sport                       │
+│ Confianza       │ 0.80                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'BAJ DISC 125 2015' se interpreta como Bajaj Discover 125 del año 2015.  Aunque no hay una entrada exacta para 'Discover 125' en 2015, la entrada más cercana es 'Bajaj discover 125' de 2014, que se clasifica como 'Sport'. Se asume que la consulta se refiere a una variante o modelo similar de ese año.
+============================================================
+
+============================================================
+Caso #2 — Modelo: gemini
+Entrada: DISCO 125
+Esperado: Bajaj Discover 125
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Desconocida                 │
+│ Modelo          │ Discover 125                │
+│ Cilindraje      │ 125                         │
+│ Año             │ N/A                         │
+│ Categoría       │ N/A                         │
+│ Confianza       │ 0.80                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'DISCO 125' se interpreta como 'Discover 125'. No hay información suficiente para determinar la marca, el año o la categoría específica.
+============================================================
+
+============================================================
+Caso #3 — Modelo: gemini
+Entrada: DISCOVER 126
+Esperado: Bajaj Discover 126
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Bajaj                       │
+│ Modelo          │ Discover 125                │
+│ Cilindraje      │ 124cc                       │
+│ Año             │ N/A                         │
+│ Categoría       │ Sport                       │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta "DISCOVER 126" se corrige a "Discover 125" por cercanía numérica. Bajaj Discover 125 es la coincidencia más probable, y se asume que el '126' es una aproximación del cilindraje.
+============================================================
+
+============================================================
+Caso #4 — Modelo: gemini
+Entrada: 125ST 15'
+Esperado: Motocicleta 125cc del 2015
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Bajaj                       │
+│ Modelo          │ Discover 125ST              │
+│ Cilindraje      │ 124cc                       │
+│ Año             │ 2014                        │
+│ Categoría       │ Sport                       │
+│ Confianza       │ 0.95                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta '125ST 15'' coincide con Bajaj Discover 125ST (2014) por el modelo (125ST) y el año (2015 se aproxima a 15').
+============================================================
+
+============================================================
+Caso #5 — Modelo: gemini
+Entrada: FAZER 125
+Esperado: Yamaha Fazer 125
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Yamaha                      │
+│ Modelo          │ Fazer                       │
+│ Cilindraje      │ 125                         │
+│ Año             │ N/A                         │
+│ Categoría       │ N/A                         │
+│ Confianza       │ 0.60                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+No hay una Fazer 125 en la lista, pero 'Fazer' es el modelo más probable. Se asume cilindraje 125 por la consulta.
+============================================================
+
+============================================================
+Caso #6 — Modelo: gemini
+Entrada: FZ 125
+Esperado: Yamaha FZ 125
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ N/A                         │
+│ Modelo          │ N/A                         │
+│ Cilindraje      │ N/A                         │
+│ Año             │ N/A                         │
+│ Categoría       │ N/A                         │
+│ Confianza       │ 0.10                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+No hay coincidencias exactas para 'FZ 125' en la lista proporcionada. Hay modelos FZ con otros cilindrajes (153cc, 249cc, 600cc, 750cc, 998cc) y modelos de 125cc de otras marcas (CZ, MZ, Sherco, etc.), pero ninguno que coincida precisamente con 'FZ 125'.
+============================================================
+
+============================================================
+Caso #7 — Modelo: gemini
+Entrada: YAMAHA FZ z
+Esperado: Yamaha FZ 125
+
+RESULTADO DEL MODELO:
+
+┌────────────────┬──────────────────────────────┐
+│ Marca           │ Yamaha                      │
+│ Modelo          │ FZ                          │
+│ Cilindraje      │ N/A                         │
+│ Año             │ N/A                         │
+│ Categoría       │ N/A                         │
+│ Confianza       │ 0.80                        │
+└────────────────┴──────────────────────────────┘
+
+Razonamiento:
+La consulta 'YAMAHA FZ z' sugiere un modelo Yamaha FZ. No hay información suficiente para determinar el cilindraje o el año. La 'z' al final podría ser un error de escritura o parte de una variante del modelo FZ.
+============================================================
+
